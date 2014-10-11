@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  SecondViewController.h
 //  GeoLocationFlashpoint
 //
 //  Created by Steven Sickler on 9/29/14.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface SecondViewController : UIViewController
 
 
 @end

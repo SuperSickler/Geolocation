@@ -1,18 +1,18 @@
 //
-//  SecondViewController.m
+//  ThirdViewController.m
 //  GeoLocationFlashpoint
 //
-//  Created by Steven Sickler on 10/2/14.
+//  Created by Steven Sickler on 10/11/14.
 //  Copyright (c) 2014 Flashpoint. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "ThirdViewController.h"
 
-@interface SecondViewController ()
+@interface ThirdViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation ThirdViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
