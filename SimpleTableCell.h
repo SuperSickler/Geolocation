@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface SimpleTableCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel *timeLabel;
+@property (nonatomic, weak) IBOutlet UILabel *speedLabel;
+@property (nonatomic, weak) IBOutlet UILabel *courseLabel;
+@property (nonatomic, weak) IBOutlet UILabel *latitudeLabel;
+@property (nonatomic, weak) IBOutlet UILabel *longitudeLabel;
+@property (nonatomic, weak) IBOutlet UILabel *accuracyLabel;
 
 @end

@@ -7,7 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CurrentLocationViewController.h"
+#import "NewLocations.h"
+#import "AppDelegate.h"
+#import <CoreData/CoreData.h>
 
 @interface SecondViewController : UIViewController
+
+
+@property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
+
+
+
+@property (nonatomic,strong)NSMutableArray* fetchedRecordsArray;
+@property (nonatomic,strong)NSArray* fetchedRecords;
+-(NSArray*)getAllLocationRecords;
+
 
 @end

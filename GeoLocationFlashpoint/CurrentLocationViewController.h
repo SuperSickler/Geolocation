@@ -7,9 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+#import "SecondViewController.h"
+#import "SettingsViewController.h"
 
-@interface SecondViewController : UIViewController
+@interface CurrentLocationViewController :  NSObject <CLLocationManagerDelegate>
+
+
+/**
+ * Set the accuracy of the location manager.
+ */
+- (void)setLocationAccuracyBestDistanceFilterNone;
 
 
 @end
-

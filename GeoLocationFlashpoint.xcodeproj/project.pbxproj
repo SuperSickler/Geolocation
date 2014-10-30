@@ -7,14 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08407A4D19E34E3A0069D5A5 /* NewLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = 08407A4C19E34E3A0069D5A5 /* NewLocations.m */; };
+		08407A4F19E42F7D0069D5A5 /* SimpleTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08407A4E19E42F7D0069D5A5 /* SimpleTableCell.xib */; };
+		08407A5519E43C8E0069D5A5 /* SimpleTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 08407A5419E43C8E0069D5A5 /* SimpleTableCell.m */; };
+		085454DD19E9E18000281B29 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 085454DC19E9E18000281B29 /* SettingsViewController.m */; };
 		087B9A7319D9F2AC002F27CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 087B9A7219D9F2AC002F27CE /* main.m */; };
 		087B9A7619D9F2AD002F27CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 087B9A7519D9F2AC002F27CE /* AppDelegate.m */; };
-		087B9A7919D9F2AD002F27CE /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 087B9A7819D9F2AD002F27CE /* FirstViewController.m */; };
-		087B9A7C19D9F2AD002F27CE /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 087B9A7B19D9F2AD002F27CE /* SecondViewController.m */; };
+		087B9A7C19D9F2AD002F27CE /* CurrentLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 087B9A7B19D9F2AD002F27CE /* CurrentLocationViewController.m */; };
 		087B9A7F19D9F2AD002F27CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 087B9A7D19D9F2AD002F27CE /* Main.storyboard */; };
 		087B9A8119D9F2AD002F27CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 087B9A8019D9F2AD002F27CE /* Images.xcassets */; };
 		087B9A8419D9F2AD002F27CE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 087B9A8219D9F2AD002F27CE /* LaunchScreen.xib */; };
 		087B9A9019D9F2AD002F27CE /* GeoLocationFlashpointTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 087B9A8F19D9F2AD002F27CE /* GeoLocationFlashpointTests.m */; };
+		08A95B5919DA300400452762 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A95B5819DA300400452762 /* CoreLocation.framework */; };
+		08C8F0CE19DCB6AC002119FE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C8F0CD19DCB6AC002119FE /* CoreGraphics.framework */; };
+		08C8F0D019DCB6B4002119FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C8F0CF19DCB6B4002119FE /* UIKit.framework */; };
+		08C8F0D219DCB6C6002119FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C8F0D119DCB6C6002119FE /* Foundation.framework */; };
+		08C8F14319DDB301002119FE /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C8F14219DDB301002119FE /* SecondViewController.m */; };
+		08C8F1FA19E3308E002119FE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C8F1F919E3308E002119FE /* CoreData.framework */; };
+		08C8F1FD19E330BC002119FE /* GeoLocationFlashpoint.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 08C8F1FB19E330BC002119FE /* GeoLocationFlashpoint.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,21 +38,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08407A4B19E34E3A0069D5A5 /* NewLocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewLocations.h; sourceTree = "<group>"; };
+		08407A4C19E34E3A0069D5A5 /* NewLocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewLocations.m; sourceTree = "<group>"; };
+		08407A4E19E42F7D0069D5A5 /* SimpleTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleTableCell.xib; sourceTree = "<group>"; };
+		08407A5319E43C8E0069D5A5 /* SimpleTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableCell.h; sourceTree = "<group>"; };
+		08407A5419E43C8E0069D5A5 /* SimpleTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableCell.m; sourceTree = "<group>"; };
+		085454DB19E9E18000281B29 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		085454DC19E9E18000281B29 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		087B9A6D19D9F2AC002F27CE /* GeoLocationFlashpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoLocationFlashpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		087B9A7119D9F2AC002F27CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		087B9A7219D9F2AC002F27CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		087B9A7419D9F2AC002F27CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		087B9A7519D9F2AC002F27CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		087B9A7719D9F2AD002F27CE /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		087B9A7819D9F2AD002F27CE /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		087B9A7A19D9F2AD002F27CE /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		087B9A7B19D9F2AD002F27CE /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		087B9A7A19D9F2AD002F27CE /* CurrentLocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurrentLocationViewController.h; sourceTree = "<group>"; };
+		087B9A7B19D9F2AD002F27CE /* CurrentLocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurrentLocationViewController.m; sourceTree = "<group>"; };
 		087B9A7E19D9F2AD002F27CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		087B9A8019D9F2AD002F27CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		087B9A8319D9F2AD002F27CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		087B9A8919D9F2AD002F27CE /* GeoLocationFlashpointTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoLocationFlashpointTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		087B9A8E19D9F2AD002F27CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		087B9A8F19D9F2AD002F27CE /* GeoLocationFlashpointTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoLocationFlashpointTests.m; sourceTree = "<group>"; };
+		08A95B5819DA300400452762 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		08C8F0CD19DCB6AC002119FE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		08C8F0CF19DCB6B4002119FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		08C8F0D119DCB6C6002119FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		08C8F14119DDB301002119FE /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		08C8F14219DDB301002119FE /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		08C8F1F919E3308E002119FE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		08C8F1FC19E330BC002119FE /* GeoLocationFlashpoint.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GeoLocationFlashpoint.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +73,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08C8F1FA19E3308E002119FE /* CoreData.framework in Frameworks */,
+				08C8F0D219DCB6C6002119FE /* Foundation.framework in Frameworks */,
+				08C8F0D019DCB6B4002119FE /* UIKit.framework in Frameworks */,
+				08C8F0CE19DCB6AC002119FE /* CoreGraphics.framework in Frameworks */,
+				08A95B5919DA300400452762 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +94,12 @@
 		087B9A6419D9F2AC002F27CE = {
 			isa = PBXGroup;
 			children = (
+				08407A5319E43C8E0069D5A5 /* SimpleTableCell.h */,
+				08407A5419E43C8E0069D5A5 /* SimpleTableCell.m */,
+				08407A4E19E42F7D0069D5A5 /* SimpleTableCell.xib */,
+				08407A4B19E34E3A0069D5A5 /* NewLocations.h */,
+				08407A4C19E34E3A0069D5A5 /* NewLocations.m */,
+				08C8F1FB19E330BC002119FE /* GeoLocationFlashpoint.xcdatamodeld */,
 				087B9A6F19D9F2AC002F27CE /* GeoLocationFlashpoint */,
 				087B9A8C19D9F2AD002F27CE /* GeoLocationFlashpointTests */,
 				087B9A6E19D9F2AC002F27CE /* Products */,
@@ -86,12 +120,14 @@
 			children = (
 				087B9A7419D9F2AC002F27CE /* AppDelegate.h */,
 				087B9A7519D9F2AC002F27CE /* AppDelegate.m */,
-				087B9A7719D9F2AD002F27CE /* FirstViewController.h */,
-				087B9A7819D9F2AD002F27CE /* FirstViewController.m */,
-				087B9A7A19D9F2AD002F27CE /* SecondViewController.h */,
-				087B9A7B19D9F2AD002F27CE /* SecondViewController.m */,
+				087B9A7A19D9F2AD002F27CE /* CurrentLocationViewController.h */,
+				087B9A7B19D9F2AD002F27CE /* CurrentLocationViewController.m */,
 				087B9A7D19D9F2AD002F27CE /* Main.storyboard */,
+				08C8F14119DDB301002119FE /* SecondViewController.h */,
+				08C8F14219DDB301002119FE /* SecondViewController.m */,
 				087B9A8019D9F2AD002F27CE /* Images.xcassets */,
+				085454DB19E9E18000281B29 /* SettingsViewController.h */,
+				085454DC19E9E18000281B29 /* SettingsViewController.m */,
 				087B9A8219D9F2AD002F27CE /* LaunchScreen.xib */,
 				087B9A7019D9F2AC002F27CE /* Supporting Files */,
 			);
@@ -101,6 +137,11 @@
 		087B9A7019D9F2AC002F27CE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				08C8F1F919E3308E002119FE /* CoreData.framework */,
+				08C8F0D119DCB6C6002119FE /* Foundation.framework */,
+				08C8F0CF19DCB6B4002119FE /* UIKit.framework */,
+				08C8F0CD19DCB6AC002119FE /* CoreGraphics.framework */,
+				08A95B5819DA300400452762 /* CoreLocation.framework */,
 				087B9A7119D9F2AC002F27CE /* Info.plist */,
 				087B9A7219D9F2AC002F27CE /* main.m */,
 			);
@@ -173,6 +214,12 @@
 				TargetAttributes = {
 					087B9A6C19D9F2AC002F27CE = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = Q92J65ZBJQ;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					087B9A8819D9F2AD002F27CE = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -206,6 +253,7 @@
 			files = (
 				087B9A7F19D9F2AD002F27CE /* Main.storyboard in Resources */,
 				087B9A8419D9F2AD002F27CE /* LaunchScreen.xib in Resources */,
+				08407A4F19E42F7D0069D5A5 /* SimpleTableCell.xib in Resources */,
 				087B9A8119D9F2AD002F27CE /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,10 +272,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				087B9A7C19D9F2AD002F27CE /* SecondViewController.m in Sources */,
+				08407A5519E43C8E0069D5A5 /* SimpleTableCell.m in Sources */,
+				08C8F1FD19E330BC002119FE /* GeoLocationFlashpoint.xcdatamodeld in Sources */,
+				08C8F14319DDB301002119FE /* SecondViewController.m in Sources */,
+				085454DD19E9E18000281B29 /* SettingsViewController.m in Sources */,
+				087B9A7C19D9F2AD002F27CE /* CurrentLocationViewController.m in Sources */,
 				087B9A7619D9F2AD002F27CE /* AppDelegate.m in Sources */,
-				087B9A7919D9F2AD002F27CE /* FirstViewController.m in Sources */,
 				087B9A7319D9F2AC002F27CE /* main.m in Sources */,
+				08407A4D19E34E3A0069D5A5 /* NewLocations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +401,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = GeoLocationFlashpoint/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -359,7 +413,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = GeoLocationFlashpoint/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -418,6 +474,7 @@
 				087B9A9519D9F2AD002F27CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		087B9A9619D9F2AD002F27CE /* Build configuration list for PBXNativeTarget "GeoLocationFlashpointTests" */ = {
 			isa = XCConfigurationList;
@@ -426,8 +483,22 @@
 				087B9A9819D9F2AD002F27CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		08C8F1FB19E330BC002119FE /* GeoLocationFlashpoint.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				08C8F1FC19E330BC002119FE /* GeoLocationFlashpoint.xcdatamodel */,
+			);
+			currentVersion = 08C8F1FC19E330BC002119FE /* GeoLocationFlashpoint.xcdatamodel */;
+			path = GeoLocationFlashpoint.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 087B9A6519D9F2AC002F27CE /* Project object */;
 }

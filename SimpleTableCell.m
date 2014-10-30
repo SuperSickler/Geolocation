@@ -10,6 +10,17 @@
 
 @implementation SimpleTableCell
 
+
+
+
+@synthesize timeLabel = _timeLabel;
+@synthesize courseLabel = _courseLabel;
+@synthesize speedLabel = _speedLabel;
+@synthesize latitudeLabel = _latitudeLabel;
+@synthesize longitudeLabel = _longitudeLabel;
+@synthesize accuracyLabel = _accuracyLabel;
+
+
 - (void)awakeFromNib {
     // Initialization code
 }
