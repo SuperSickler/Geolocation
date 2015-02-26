@@ -40,7 +40,8 @@
 
 //below is first screen presented in App which will be used as a splashscreen
     self.storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//bewlow is first interactive screen for the application as noted by the identifier for the second view controller
+
+    //bewlow is first interactive screen for the application as noted by the identifier for the second view controller
     self.viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"FlashbackID"];
     self.navigationController  = [[UINavigationController alloc] initWithRootViewController:self.viewController];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
@@ -60,7 +61,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     self.backgroundTask = [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler: ^{ }];
-    [self startTimer];
+    //[self startTimer];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
@@ -69,19 +70,44 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+
+
+
 - (void)startTimer
 {
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:5
+
+
+    NSUserDefaults *standardDefaults = [NSUserDefaults standardUserDefaults];
+    NSInteger theTimer = [standardDefaults integerForKey:@"myTime"];
+
+    long int x = theTimer;
+
+    NSLog(@"timer set to %li", x);
+
+
+
+//sets timer to 10 when app is first used
+        if (x <= 0) {
+            x = 10;
+        }
+//app must be restarted inorder for setting changes to take effect
+NSLog(@"timer has changed to to %li", x);
+
+
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:x
                                                   target:self->locationController
                                                 selector:@selector(setLocationAccuracyBestDistanceFilterNone)
                                                 userInfo:nil
                                                  repeats:YES];
+
+
 }
 
 // 1

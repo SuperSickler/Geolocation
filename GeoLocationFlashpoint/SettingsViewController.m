@@ -11,6 +11,7 @@
 @interface SettingsViewController ()
 
 @property (strong, nonatomic) IBOutlet UISlider *mySlider;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *accuracySwitch;
 
 @end
 
@@ -20,11 +21,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSInteger theTimer = [defaults integerForKey:@"myTime"];
-    self.numberOfSeconds.text = [NSString stringWithFormat:@"%i",theTimer];
 
+    NSUserDefaults *standardDefaults= [NSUserDefaults standardUserDefaults];
+    NSInteger theTimer = [standardDefaults integerForKey:@"myTime"];
+    self.numberOfSeconds.text = [NSString stringWithFormat:@"%li",(long)theTimer];
+    if ([self.numberOfSeconds.text isEqual:@"0"]) {
+        self.mySlider.value = 10;
+        self.numberOfSeconds.text = @"10";
 
+    }else {
+
+        self.mySlider.value = theTimer;
+    }
+
+    if ([[standardDefaults stringForKey:@"distanceSettingKey"] isEqualToString:@"High"]) {
+        self.accuracySwitch.selectedSegmentIndex = 0;
+    } else if ([[standardDefaults stringForKey:@"distanceSettingKey"] isEqualToString:@"Meduim"]) {
+        self.accuracySwitch.selectedSegmentIndex = 1;
+    } else if ([[standardDefaults stringForKey:@"distanceSettingKey"] isEqualToString:@"Low"]) {
+        self.accuracySwitch.selectedSegmentIndex = 2;
+    }
 
 }
 
@@ -43,4 +59,34 @@
     }
 
 }
+
+-(IBAction)toggleControl:(UISegmentedControl *)control
+{
+    NSUserDefaults *standardDefaults = [NSUserDefaults standardUserDefaults];
+    if (control.selectedSegmentIndex == 0) {
+
+        NSLog(@"High Selected");
+        [standardDefaults setObject:@"High" forKey:@"distanceSettingKey"];
+
+
+    } else if (control.selectedSegmentIndex ==1){
+        NSLog(@"Meduim Selected");
+        [standardDefaults setObject:@"Meduim" forKey:@"distanceSettingKey"];
+
+    }else if (control.selectedSegmentIndex ==2) {
+        NSLog(@"Low Selected");
+        [standardDefaults setObject:@"Low" forKey:@"distanceSettingKey"];
+    }
+    [standardDefaults synchronize];
+}
+- (IBAction)saveSettings:(id)sender{
+
+    self.rulesToSave = [[UIAlertView alloc] initWithTitle:@"Save Settings"
+                                                              message:[NSString stringWithFormat:@"In order for these new settings to take effect and changed permenantly you must close this application entirely and re-launch it.  Thank you"]
+                                                             delegate:self
+                                                    cancelButtonTitle:@"OK"
+                                                    otherButtonTitles:nil];
+    [self.rulesToSave show];
+}
+
 @end

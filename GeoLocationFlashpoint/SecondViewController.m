@@ -29,6 +29,7 @@
 
 
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -90,14 +91,14 @@ return self.fetchedRecordsArray.count;
         NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"SimpleTableCell" owner:self options:nil];
         cell = [nib objectAtIndex:0];    }
 
-    NewLocations *record = [self.fetchedRecordsArray objectAtIndex:indexPath.row];
+ //   NewLocations *record = [self.fetchedRecordsArray objectAtIndex:indexPath.row];
 
-    cell.timeLabel.text = [NSString stringWithFormat:@"%@",record.timestamp];
-    cell.latitudeLabel.text = [NSString stringWithFormat:@"%@",record.latitude];
-    cell.longitudeLabel.text = [NSString stringWithFormat:@"%@",record.longitude];
-    cell.speedLabel.text = [NSString stringWithFormat:@"%@",record.speed];
-    cell.courseLabel.text = [NSString stringWithFormat:@"%@",record.course];
-    cell.accuracyLabel.text = [NSString stringWithFormat:@"%@",record.accuracy];
+//    cell.timeLabel.text = [NSString stringWithFormat:@"%@",record.timestamp];
+//    cell.latitudeLabel.text = [NSString stringWithFormat:@"%@",record.latitude];
+//    cell.longitudeLabel.text = [NSString stringWithFormat:@"%@",record.longitude];
+//    cell.speedLabel.text = [NSString stringWithFormat:@"%@",record.speed];
+//    cell.courseLabel.text = [NSString stringWithFormat:@"%@",record.course];
+//    cell.accuracyLabel.text = [NSString stringWithFormat:@"%@",record.accuracy];
 
     return cell;
 

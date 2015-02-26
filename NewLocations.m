@@ -17,5 +17,21 @@
 @dynamic speed;
 @dynamic latitude;
 @dynamic longitude;
+@dynamic count;
+
+
+
+@dynamic subThoroughfare;
+@dynamic thoroughfare;
+@dynamic postalCode;
+@dynamic locality;
+@dynamic administrativeArea;
+@dynamic country;
+
+
+
+
+
+
 
 @end

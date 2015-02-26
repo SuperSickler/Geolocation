@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "CurrentLocationViewController.h"
 #import <CoreData/CoreData.h>
-
+#import "SettingsViewController.h"
 
 @class CurrentLocationViewController;
 

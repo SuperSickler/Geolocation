@@ -13,10 +13,17 @@
 @interface NewLocations : NSManagedObject
 
 @property (nonatomic, retain) NSString * timestamp;
-@property (nonatomic, retain) NSString * accuracy;
-@property (nonatomic, retain) NSString * course;
-@property (nonatomic, retain) NSString * speed;
-@property (nonatomic, retain) NSString * latitude;
-@property (nonatomic, retain) NSString * longitude;
+@property int accuracy;
+@property int course;
+@property int speed;
+@property double latitude;
+@property double longitude;
+@property (nonatomic,retain) NSString *subThoroughfare;
+@property (nonatomic,retain) NSString *thoroughfare;
+@property (nonatomic,retain) NSString *postalCode;
+@property (nonatomic,retain) NSString *locality;
+@property (nonatomic,retain) NSString *administrativeArea;
+@property (nonatomic,retain) NSString *country;
 
+@property (nonatomic, retain) NSString * count;
 @end
